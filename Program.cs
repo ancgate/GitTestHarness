@@ -6,7 +6,7 @@ namespace GitTestHarness
         static void Main(string[] args)
         {
             GitRepositoryManager git = new GitRepositoryManager("UserName","Name", "Repo", @"localRepo");
-            git.CommitAllChanges("test");
+            git.CommitAllChanges("Name");
             git.PushCommits("origin", "master");
         }
     }
