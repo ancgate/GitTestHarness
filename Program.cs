@@ -5,7 +5,7 @@ namespace GitTestHarness
     {
         static void Main(string[] args)
         {
-            GitRepositoryManager git = new GitRepositoryManager("MaV","test", "http://@git.tempesttech.com:7990/scm/tmp/gittestharness.git", @"C:\test");
+            GitRepositoryManager git = new GitRepositoryManager("UserName","Name", "Repo", @"localRepo");
             git.CommitAllChanges("test");
             git.PushCommits("origin", "master");
         }
